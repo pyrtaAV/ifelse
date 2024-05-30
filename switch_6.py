@@ -3,7 +3,17 @@
 # На выходе должны получить число, после выполнения операции.
 
 
-def calculator(left_operand: int, right_operand: int, operator: str):
+def calculator(left_operand: int, right_operand: int, operator: str) -> str:
+    """Функция калькулятор выполняет основные математические операции
+
+    Args:
+        left_operand (int): левый операнд выражения
+        right_operand (int): правый операнд выражения
+        operator (str): математический оператор (+, -, *, /)
+
+    Returns:
+        _type_: str
+    """
     match operator:
         case '*':
             return f'{left_operand * right_operand}'
