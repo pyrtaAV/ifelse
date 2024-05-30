@@ -2,6 +2,15 @@
 # Вывести значения D и M для даты, следующей за указанной.
 
 def next_day_and_month(day: int, month: int):
+    """Функция возвращает следующую дату невисокосного года
+
+    Args:
+        day (int): Принимает день
+        month (int): Принимает месяц
+
+    Returns:
+        _type_: str
+    """
     match month:
         case 1 | 3 | 5 | 7 | 8 | 10:
             if day != 31:
